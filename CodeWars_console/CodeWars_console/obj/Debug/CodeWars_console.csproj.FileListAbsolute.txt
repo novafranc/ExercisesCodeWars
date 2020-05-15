@@ -1,0 +1,7 @@
+C:\Users\FRANCO\Desktop\CodeWars\CodeWars_console\CodeWars_console\bin\Debug\CodeWars_console.exe.config
+C:\Users\FRANCO\Desktop\CodeWars\CodeWars_console\CodeWars_console\bin\Debug\CodeWars_console.exe
+C:\Users\FRANCO\Desktop\CodeWars\CodeWars_console\CodeWars_console\bin\Debug\CodeWars_console.pdb
+C:\Users\FRANCO\Desktop\CodeWars\CodeWars_console\CodeWars_console\obj\Debug\CodeWars_console.csprojAssemblyReference.cache
+C:\Users\FRANCO\Desktop\CodeWars\CodeWars_console\CodeWars_console\obj\Debug\CodeWars_console.csproj.CoreCompileInputs.cache
+C:\Users\FRANCO\Desktop\CodeWars\CodeWars_console\CodeWars_console\obj\Debug\CodeWars_console.exe
+C:\Users\FRANCO\Desktop\CodeWars\CodeWars_console\CodeWars_console\obj\Debug\CodeWars_console.pdb

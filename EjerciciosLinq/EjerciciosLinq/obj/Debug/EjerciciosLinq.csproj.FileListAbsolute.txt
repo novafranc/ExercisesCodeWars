@@ -1,0 +1,7 @@
+C:\Users\FRANCO\Desktop\CodeWars\EjerciciosLinq\EjerciciosLinq\bin\Debug\EjerciciosLinq.exe.config
+C:\Users\FRANCO\Desktop\CodeWars\EjerciciosLinq\EjerciciosLinq\bin\Debug\EjerciciosLinq.exe
+C:\Users\FRANCO\Desktop\CodeWars\EjerciciosLinq\EjerciciosLinq\bin\Debug\EjerciciosLinq.pdb
+C:\Users\FRANCO\Desktop\CodeWars\EjerciciosLinq\EjerciciosLinq\obj\Debug\EjerciciosLinq.csprojAssemblyReference.cache
+C:\Users\FRANCO\Desktop\CodeWars\EjerciciosLinq\EjerciciosLinq\obj\Debug\EjerciciosLinq.csproj.CoreCompileInputs.cache
+C:\Users\FRANCO\Desktop\CodeWars\EjerciciosLinq\EjerciciosLinq\obj\Debug\EjerciciosLinq.exe
+C:\Users\FRANCO\Desktop\CodeWars\EjerciciosLinq\EjerciciosLinq\obj\Debug\EjerciciosLinq.pdb
