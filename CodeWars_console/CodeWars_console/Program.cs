@@ -15,7 +15,9 @@ namespace CodeWars_console
             //Console.WriteLine("Cuadrado Perfecto" + IsSquare2(25));
             //Console.WriteLine("Invirtiendo palabras : " + SpinWords("Hey fellow warriors"));
             //Console.WriteLine("Ordenando Numero de mayor a menor : " + DescendingOrder(25587849));
-            Console.WriteLine("Posicion de alfabeto : " + AlphabetPosition(">E\u00019DwI2\u0002C>U%[ XGx\u001fR.4"));      
+            //Console.WriteLine("Posicion de alfabeto : " + AlphabetPosition(">E\u00019DwI2\u0002C>U%[ XGx\u001fR.4"));      
+
+            Console.WriteLine("Conversion hexadecimal : " + Rgb(255,255,255));
             Console.Read();
         }
 
@@ -279,6 +281,87 @@ namespace CodeWars_console
             }
 
             return nuevo.TrimEnd();
+        }
+
+        public static string Rgb(int r, int g, int b)
+        {
+            Console.WriteLine("R : " + r + " G : " + g.ToString()  +" B : " + b.ToString());
+
+
+            char[] hexadecimal = { '0', '1','2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F' };
+
+            int[] conversion(int num)
+            {
+                if (num > 255)
+                {
+                    num = 255;
+                }
+
+                if (num < 0)
+                {
+                    num = 0;
+                }
+
+                List<int> arreglo = new List<int>();
+                int x = num / 16;
+                int y = 0;
+                int a = num - (x * 16);
+                arreglo.Add(a);
+                while (x != 0)
+                {
+                    y = x / 16;
+                    a = x - (y * 16);
+                    arreglo.Add(a);
+                    x = y;
+                }
+
+                return arreglo.ToArray();
+            }
+
+           
+
+            string rgbHexa = "";
+
+            int[] num1 = conversion(r);
+            for(int i = num1.Length - 1; i > -1; i--)
+            {
+                if (num1.Length == 1)
+                {
+                    rgbHexa += "0" + hexadecimal[num1[i]];
+                }
+                else
+                {
+                    rgbHexa += hexadecimal[num1[i]];
+                }
+            }
+
+            int[] num2 = conversion(g);
+            for (int i = num2.Length - 1; i > -1; i--)
+            {
+                if (num2.Length == 1)
+                {
+                    rgbHexa += "0" + hexadecimal[num2[i]];
+                }
+                else
+                {
+                    rgbHexa += hexadecimal[num2[i]];
+                }
+            }
+            int[] num3 = conversion(b);
+            for (int i = num3.Length - 1; i > -1; i--)
+            {
+                if (num3.Length == 1)
+                {
+                    rgbHexa += "0" + hexadecimal[num3[i]];
+                }
+                else
+                {
+                    rgbHexa += hexadecimal[num3[i]];
+                }
+                
+            }
+
+            return rgbHexa;
         }
 
     }
