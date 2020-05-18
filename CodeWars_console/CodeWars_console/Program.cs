@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text.RegularExpressions;
 
@@ -16,8 +17,9 @@ namespace CodeWars_console
             //Console.WriteLine("Invirtiendo palabras : " + SpinWords("Hey fellow warriors"));
             //Console.WriteLine("Ordenando Numero de mayor a menor : " + DescendingOrder(25587849));
             //Console.WriteLine("Posicion de alfabeto : " + AlphabetPosition(">E\u00019DwI2\u0002C>U%[ XGx\u001fR.4"));      
+            //Console.WriteLine("Conversion hexadecimal : " + Rgb(255,255,255));
 
-            Console.WriteLine("Conversion hexadecimal : " + Rgb(255,255,255));
+            Console.WriteLine("Palabra en camello : " + toCamelCase("The_Stealth_Warrior"));
             Console.Read();
         }
 
@@ -302,6 +304,7 @@ namespace CodeWars_console
                     num = 0;
                 }
 
+
                 List<int> arreglo = new List<int>();
                 int x = num / 16;
                 int y = 0;
@@ -362,6 +365,27 @@ namespace CodeWars_console
             }
 
             return rgbHexa;
+        }
+
+        public static String toCamelCase(String s)
+        {
+            Console.WriteLine("Oracion : " + s);
+            //string[] arreglo = s.Split('-');
+            //arreglo = s.Split('_');
+            string patron = "[-_]";
+            string[] arreglo = Regex.Split(s, patron);
+            String nuevo = "";
+            for(int i = 0; i < arreglo.Length; i++)
+            {
+                if (i > 0)
+                {
+                    //nuevo += arreglo[i].Substring(0, 1).ToUpper();
+                    nuevo += CultureInfo.CurrentCulture.TextInfo.ToTitleCase(arreglo[i]);
+                    continue;
+                }
+                nuevo += arreglo[i];
+            }
+            return nuevo;
         }
 
     }
